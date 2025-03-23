@@ -1,0 +1,31 @@
+local player = game.Players.LocalPlayer
+
+local whitelistedPlayers = {
+    "pb_tom3",
+    "sbs_kids282",
+    "radarfrmsu",
+    "bandit_onmission",
+    "princethiago20_80755",
+    "kaisfrms2shub",
+    "MICHWLAD"
+}
+
+local isWhitelisted = false
+for _, whitelistedName in pairs(whitelistedPlayers) do
+    if player.Name == whitelistedName then
+        isWhitelisted = true
+        break
+    end
+end
+
+-- If the player is not whitelisted, send a notification and stop the script
+if not isWhitelisted then
+    game:GetService("StarterGui"):SetCore("SendNotification", {
+        Title = "Access Denied",
+        Text = "You are not whitelisted!",
+        Duration = 3
+    })
+    return -- Prevent further code execution
+end
+
+print("Whitelisted - Loading UI...")
