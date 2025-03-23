@@ -5,6 +5,6 @@ return {
     "bandit_onmission",
     "princethiago20_80755",
     "kaisfrms2shub",
-    "MICHWLAD"
-    "BESTAKGOD36",
+    "MICHWLAD",
+    "BESTAKGOD36"
 }
