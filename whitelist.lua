@@ -6,5 +6,5 @@ return {
     "princethiago20_80755",
     "kaisfrms2shub",
     "MICHWLAD"
-    "Bestakgod36",
+    "BESTAKGOD36",
 }
